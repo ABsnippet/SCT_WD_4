@@ -19,9 +19,14 @@ This project was developed as part of my **Web Development Internship (Task 04)*
 ## Project Structure
 
 📦 todo-app
- ┣ 📜 index.html
- ┣ 📜 style.css
- ┗ 📜 script.js
+
+│── index.html # Main HTML file
+
+│── style.css # Styling and theme definitions
+
+│── script.js #  logic and event listeners
+
+└── README.md # Project documentation
 
  ## How To Use
 1.Clone or download the repository.
