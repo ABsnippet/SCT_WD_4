@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.todo-app {
+  width: 100%;
+  max-width: 600px;
+  background: #1f2937;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  color: #f8fafc;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #38bdf8;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input,
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+input[type="text"],
+input[type="datetime-local"] {
+  flex: 1;
+  background: #111827;
+  color: #f1f5f9;
+  outline: none;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* --- Task List --- */
+ul {
+  list-style: none;
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+li {
+  background: #334155;
+  margin-bottom: 12px;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+li:hover {
+  transform: translateY(-2px);
+}
+
+.task-info {
+  flex: 1;
+}
+
+.task-text {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.task-date {
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.completed .task-text {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 6px;
+}
+
+.complete {
+  background: #10b981;
+}
+.edit {
+  background: #f59e0b;
+}
+.delete {
+  background: #ef4444;
+}
+
+.complete:hover {
+  background: #059669;
+}
+.edit:hover {
+  background: #d97706;
+}
+.delete:hover {
+  background: #dc2626;
+}
